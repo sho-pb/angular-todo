@@ -1,9 +1,19 @@
 .form {
-  display: flex;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
   &__text-field {
     width: 100%;
-    margin-right: 24px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 24px;
+    }
   }
   &__button {
     flex-shrink: 0;

@@ -1,5 +1,5 @@
 .todo-list {
-  max-height: 300px;
+  max-height: calc(100vh - 250px);
   overflow: scroll;
   padding: 24px 24px;
   border-radius: 8px;
