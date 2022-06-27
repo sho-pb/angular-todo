@@ -3,6 +3,7 @@
     type="text"
     class="text-field__body"
     placeholder="タスクを入力..."
+    [value]="formControl.value"
     (input)="onInput($event)"
   />
 </div>
