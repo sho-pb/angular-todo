@@ -12,6 +12,11 @@
     &:not(:last-child) {
       margin-bottom: 16px;
     }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   &__content {
     margin-bottom: 16px;
