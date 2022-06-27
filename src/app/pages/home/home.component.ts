@@ -4,15 +4,17 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  formValue = '';
-  task = new FormControl('', [])
-  tasks = [];
+  task = new FormControl('', []);
+  tasks: string[] = [];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  test() {
+    this.task.value && this.tasks.push(this.task.value);
   }
+
+  constructor() {}
+
+  ngOnInit(): void {}
 }

@@ -1,0 +1,10 @@
+.form {
+  display: flex;
+  &__text-field {
+    width: 100%;
+    margin-right: 24px;
+  }
+  &__button {
+    flex-shrink: 0;
+  }
+}
