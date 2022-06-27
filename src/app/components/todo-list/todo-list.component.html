@@ -1,0 +1,6 @@
+<ul class="todo-list" [class.hasItem]="items.length > 0">
+  <li *ngFor="let item of items; let i = index" class="todo-list__item">
+    <p class="todo-list__content">{{ item }}</p>
+    <app-button (click)="handleItemDelete(i)">削除</app-button>
+  </li>
+</ul>

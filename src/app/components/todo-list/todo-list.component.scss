@@ -1,0 +1,19 @@
+.todo-list {
+  max-height: 300px;
+  overflow: scroll;
+  padding: 24px 24px;
+  border-radius: 8px;
+  &.hasItem {
+    box-shadow: inset 5px 5px 10px #d2d5d9, inset -5px -5px 10px #f6fbff;
+  }
+  &__item {
+    box-shadow: 2.5px 2.5px 5px #c2c5c9, -2.5px -2.5px 5px #ffffff;
+    padding: 16px 16px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &__content {
+    margin-bottom: 16px;
+  }
+}

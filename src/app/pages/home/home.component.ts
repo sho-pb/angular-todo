@@ -10,8 +10,13 @@ export class HomeComponent implements OnInit {
   task = new FormControl('', []);
   tasks: string[] = [];
 
-  test() {
-    this.task.value && this.tasks.push(this.task.value);
+  addTask() {
+    this.task.value && this.tasks.unshift(this.task.value);
+    this.task.setValue('')
+  }
+
+  handleItemDelete(index: number) {
+    this.tasks.splice(index, 1);
   }
 
   constructor() {}

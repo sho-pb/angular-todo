@@ -5,6 +5,7 @@
       ngDefaultControl
       [formControl]="task"
     ></app-text-field>
-    <app-button (click)="test()" class="form__button">追加</app-button>
+    <app-button (click)="addTask()" class="form__button">追加</app-button>
   </div>
+  <app-todo-list [handleItemDelete]="handleItemDelete.bind(this)" [items]="tasks"></app-todo-list>
 </app-container>
