@@ -1,10 +1,13 @@
 .text-field {
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  box-shadow: inset 5px 5px 10px #c2c5c9, inset -5px -5px 10px #ffffff;
+  border-radius: 24px;
   &__body {
     display: block;
     width: 100%;
-    padding: 8px 16px;
+    padding: 12px 24px;
     line-height: 1.5;
+    &:focus {
+      outline: none;
+    }
   }
 }
