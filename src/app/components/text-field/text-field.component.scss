@@ -1,0 +1,10 @@
+.text-field {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  &__body {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 1.5;
+  }
+}
